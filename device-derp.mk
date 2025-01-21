@@ -24,6 +24,9 @@ include hardware/google/pixel/powershare/device.mk
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
 
+# Viper4Android
+include packages/apps/ViPER4AndroidFX/config.mk
+
 # Build necessary packages for vendor
 
 # Codec2
