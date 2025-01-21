@@ -51,3 +51,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
