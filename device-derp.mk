@@ -34,6 +34,9 @@ include device/google/gs-common/wireless_charger/wireless_charger.mk
 # Viper4Android
 include packages/apps/ViPER4AndroidFX/config.mk
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Build necessary packages for vendor
 
 # Codec2
