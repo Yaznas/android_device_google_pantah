@@ -37,6 +37,9 @@ include packages/apps/ViPER4AndroidFX/config.mk
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Udfps Icons
+EXTRA_UDFPS_ICONS := true
+
 # Build necessary packages for vendor
 
 # Codec2
