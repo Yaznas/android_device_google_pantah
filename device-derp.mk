@@ -11,9 +11,6 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-derp
 PRODUCT_PACKAGES += \
     ANGLE
 
-# Camera
-$(call inherit-product-if-exists, vendor/google/camera/config.mk)
-
 # EUICC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
@@ -30,15 +27,6 @@ include hardware/google/pixel/powershare/device.mk
 
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
-
-# Viper4Android
-include packages/apps/ViPER4AndroidFX/config.mk
-
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-# Udfps Icons
-EXTRA_UDFPS_ICONS := true
 
 # Build necessary packages for vendor
 
@@ -61,7 +49,3 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
-
-# Remove Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
